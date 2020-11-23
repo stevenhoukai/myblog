@@ -2,7 +2,7 @@
 
 别的不说，先来一波鸡血，学习之路及其漫长，我们要及时给自己打打鸡血！
 
-![](F:\github\myblog\images\timg.jpg)
+![](https://github.com/stevenhoukai/myblog/blob/main/images/timg.jpg)
 
 ## **YonYou UAP**
 
