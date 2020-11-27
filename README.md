@@ -42,11 +42,11 @@
 
   - #### **二叉树**
 
-    - ######  *[二叉树的遍历](https://stevenhoukai.github.io/2020/11/25/20201125-selfcomputer/)*
+    - ######  *[二叉树的遍历](https://stevenhoukai.github.io/2020/11/26/20201126-blbinarytree/)*
   
   - ####  **栈**
   
-    - ######  *[用栈实现带括号的四则混合运算](https://stevenhoukai.github.io/2020/11/26/20201126-blbinarytree/)*
+    - ######  *[用栈实现带括号的四则混合运算](https://stevenhoukai.github.io/2020/11/25/20201125-selfcomputer/)*
 
 ## **计组与网络**
 
