@@ -22,11 +22,13 @@
 
 ## **Golang**
 
-- ### Go语言基础
+- ### Golang基础
 
   -  ###### *[Go语言基础之变量和常量]()*
 
-- ### Go语言常用标准库
+- ### Golang学习ing相关作业
+
+  - ###### *[作业1](https://stevenhoukai.github.io/2020/11/26/20201127-golangprectice1/)*
 
 - ### 数据库相关
 
@@ -38,9 +40,13 @@
 
 - ###  常用数据结构
 
-  - ####  **栈**
+  - #### **二叉树**
 
-    - ######  *[用栈实现带括号的四则混合运算](https://stevenhoukai.github.io/2020/11/25/20201125-selfcomputer/)*
+    - ######  *[二叉树的遍历](https://stevenhoukai.github.io/2020/11/25/20201125-selfcomputer/)*
+  
+  - ####  **栈**
+  
+    - ######  *[用栈实现带括号的四则混合运算](https://stevenhoukai.github.io/2020/11/26/20201126-blbinarytree/)*
 
 ## **计组与网络**
 
@@ -48,5 +54,5 @@
 
 ## **面试**
 
-- ###### [三少爷的一次后台开发面试之旅](https://stevenhoukai.github.io/2020/11/21/20201121-ms1/)
+- ###### *[三少爷的一次后台开发面试之旅](https://stevenhoukai.github.io/2020/11/21/20201121-ms1/)*
 
