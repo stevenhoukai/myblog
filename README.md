@@ -1,4 +1,4 @@
-#                                               小猴的笔记薄
+#                                               猴小猴的笔记薄
 
 别的不说，先来一波鸡血，学习之路及其漫长，我们要及时给自己打打鸡血！
 
@@ -29,6 +29,8 @@
 - ### Golang学习ing相关作业
 
   - ###### *[作业1](https://stevenhoukai.github.io/2020/11/26/20201127-golangprectice1/)*
+
+  - ###### *[作业2](https://stevenhoukai.github.io/2020/11/26/20201127-golangprectice1/)*
 
 - ### 数据库相关
 
