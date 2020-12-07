@@ -1,6 +1,6 @@
-#                                               猴小猴的笔记薄
+#                                               猴小猴的笔记本儿
 
-别的不说，先来一波鸡血，学习之路及其漫长，我们要及时给自己打打鸡血！
+学习之路及其漫长，我们要及时给自己打打鸡血！
 
 ![](https://github.com/stevenhoukai/myblog/blob/main/images/timg.jpg)
 
@@ -30,9 +30,11 @@
 
   - ###### *[作业1](https://stevenhoukai.github.io/2020/11/26/20201127-golangprectice1/)*
 
-  - ###### *[作业2](https://stevenhoukai.github.io/2020/11/26/20201127-golangprectice1/)*
+  - ###### *[作业2](https://stevenhoukai.github.io/2020/11/28/20201128-golangprectice2/)*
 
-- ### 数据库相关
+- ### GoLang并发编程
+
+  - ###### *[初识goroutine](https://stevenhoukai.github.io/2020/11/26/20201127-golangprectice1/)*
 
 - ### web开发相关
 
