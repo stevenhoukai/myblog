@@ -34,7 +34,7 @@
 
 - ### GoLang并发编程
 
-  - ###### *[初识goroutine](https://stevenhoukai.github.io/2020/11/26/20201127-golangprectice1/)*
+  - ###### *[初识goroutine](https://stevenhoukai.github.io/2020/12/04/20201204-goroutine/)*
 
 - ### web开发相关
 
