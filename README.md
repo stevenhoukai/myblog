@@ -58,7 +58,7 @@
 
 - ### 小知识
 
-  - ###### *[Mysql中Count()的小知识](https://stevenhoukai.github.io/2020/12/04/20210812-explainCount/)*
+  - ###### *[Mysql中Count()的小知识](https://stevenhoukai.github.io/2021/08/12/20210812-explainCount/)*
 
 ## **Linux与网络**
 
