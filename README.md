@@ -1,4 +1,4 @@
-#                                               猴小猴的笔记本儿
+#                                               侯小猴的笔记本儿
 
 学习之路及其漫长，我们要及时给自己打打鸡血！
 
@@ -16,29 +16,31 @@
 
 - ### **Spring**
 
-  - ###### *[手工简单实现基于xml的IOC](https://stevenhoukai.github.io/2020/01/28/20200127springioc/)*
+  - ###### *[手动简单实现基于xml的IOC](https://stevenhoukai.github.io/2020/01/28/20200127springioc/)*
 
-  - ###### *[手工简单实现基于annotation的IOC](https://stevenhoukai.github.io/2020/01/29/springioc-anno/)*
+  - ###### *[手动简单实现基于annotation的IOC](https://stevenhoukai.github.io/2020/01/29/springioc-anno/)*
 
 ## **Golang**
 
-- ### Golang基础
+- ### **Golang基础**
 
   -  ###### *[Go语言基础之变量和常量]()*
 
-- ### Golang学习ing相关作业
+- ### **Golang学习ing相关作业**
 
   - ###### *[作业1](https://stevenhoukai.github.io/2020/11/26/20201127-golangprectice1/)*
 
   - ###### *[作业2](https://stevenhoukai.github.io/2020/11/28/20201128-golangprectice2/)*
 
-- ### GoLang并发编程
+- ### **GoLang并发编程**
 
   - ###### *[初识goroutine](https://stevenhoukai.github.io/2020/12/04/20201204-goroutine/)*
 
-- ### web开发相关
+- ### **Web开发相关**
 
-- ### 常用组件和技巧
+- ### **踩坑记录**
+
+  - ###### *[场景1:for循环遍历](https://stevenhoukai.github.io/2020/12/04/20201204-xxxx/)*
 
 ## **数据结构与算法**
 
@@ -52,13 +54,17 @@
   
     - ######  *[用栈实现带括号的四则混合运算](https://stevenhoukai.github.io/2020/11/25/20201125-selfcomputer/)*
 
-## **计组与网络**
+## **数据库**
 
-## **Linux学习**
+- ### 小知识
+
+  - ###### *[Mysql中Count()的小知识](https://stevenhoukai.github.io/2020/12/04/20210812-explainCount/)*
+
+## **Linux与网络**
 
 ## **面试篇**
 
-- ###### *[三少爷的一次后台开发面试之旅](https://stevenhoukai.github.io/2020/11/21/20201121-ms1/)* 
+- ###### *[猴儿的一次后台开发面试之旅](https://stevenhoukai.github.io/2020/11/21/20201121-ms1/)* 
 
 - ###### *[hexo迁移（Windows -> Mac)](https://stevenhoukai.github.io/2020/12/18/20201218-HexoTransferWindowsToMac/)* 
 
