@@ -1,5 +1,7 @@
 #                                               侯小猴的笔记本儿
 
+腾讯内推邮箱: 348008515@qq.com  or  stephenkhou@tencent.com 简历请说明一下自己的求职意向哈
+
 学习之路及其漫长，我们要及时给自己打打鸡血！
 
 ![](https://github.com/stevenhoukai/myblog/blob/main/images/timg.jpg)
@@ -40,11 +42,11 @@
 
 - ### **踩坑记录**
 
-  - ###### *[场景1:for循环遍历](https://stevenhoukai.github.io/2020/12/04/20201204-xxxx/)*
+  - ###### *[场景1:for循环遍历](https://stevenhoukai.github.io/2021/08/16/20210816-gapGolangFor/)*
 
 ## **数据结构与算法**
 
-- ###  常用数据结构
+- ###  **常用数据结构**
 
   - #### **二叉树**
 
@@ -56,15 +58,24 @@
 
 ## **数据库**
 
-- ### 小知识
+- ### **Mysql**
 
-  - ###### *[Mysql中Count()的小知识](https://stevenhoukai.github.io/2021/08/12/20210812-explainCount/)*
+  - #### **小知识**
+
+    - ######  *[Mysql中Count()的小知识](https://stevenhoukai.github.io/2021/08/12/20210812-explainCount/)*
 
 ## **Linux与网络**
 
 ## **面试篇**
 
-- ###### *[猴儿的一次后台开发面试之旅](https://stevenhoukai.github.io/2020/11/21/20201121-ms1/)* 
+- ###### *[猴哥的一次后台开发面试之旅](https://stevenhoukai.github.io/2020/11/21/20201121-ms1/)* 
 
 - ###### *[hexo迁移（Windows -> Mac)](https://stevenhoukai.github.io/2020/12/18/20201218-HexoTransferWindowsToMac/)* 
 
+## **爱好篇**
+
+- ### **吉他弹唱**
+
+- ### **键盘弹唱**
+
+- ### 吉他谱
