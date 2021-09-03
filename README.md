@@ -38,6 +38,8 @@
 
   - ###### *[初识goroutine](https://stevenhoukai.github.io/2020/12/04/20201204-goroutine/)*
 
+  - ###### *[自定义实现简易goroutine池](https://stevenhoukai.github.io/2021/09/03/20210903-goroutinepool/)*
+
 - ### **Web开发相关**
 
 - ### **工作踩坑记录**
