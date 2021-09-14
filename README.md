@@ -42,6 +42,8 @@
 
   - ###### *[引入简易goroutine池引发的一个bug](https://stevenhoukai.github.io/2021/09/14/20210914-goroutinepoolcpubug/)*
 
+  - ###### *[golang的select使用总结](https://stevenhoukai.github.io/2021/09/14/20210914-goroutineselect/)*
+
 - ### **Web开发相关**
 
 - ### **工作踩坑记录**
