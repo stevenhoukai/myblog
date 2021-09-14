@@ -40,6 +40,8 @@
 
   - ###### *[自定义实现简易goroutine池](https://stevenhoukai.github.io/2021/09/03/20210903-goroutinepool/)*
 
+  - ###### *[引入简易goroutine池引发的一个bug](https://stevenhoukai.github.io/2021/09/14/20210914-goroutinepoolcpubug/)*
+
 - ### **Web开发相关**
 
 - ### **工作踩坑记录**
