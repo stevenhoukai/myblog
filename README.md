@@ -50,6 +50,8 @@
 
   - ###### *[场景2:如何把Redis中同一前缀的所有key遍历出来](https://stevenhoukai.github.io/2021/08/19/20210819-redisScan/)*
 
+  - ###### *[场景3:一个cpu被打满的一天](https://stevenhoukai.github.io/2021/09/14/20210914-goroutinepoolcpubug/)*
+
 ## **数据结构与算法**
 
 - ###  **常用数据结构**
@@ -94,6 +96,8 @@
 ## **爱好篇**
 
 - ### **吉他弹唱**
+
+  - ###### *[发如雪](https://stevenhoukai.github.io/2021/08/16/20210816-gapGolangFor/)*
 
 - ### **键盘弹唱**
 
