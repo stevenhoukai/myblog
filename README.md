@@ -44,7 +44,9 @@
 
   - ###### *[golang的select使用总结](https://stevenhoukai.github.io/2021/09/14/20210914-goroutineselect/)*
 
-- ### **Web开发相关**
+- ### **Web开发与系统设计**
+
+  - ###### *[如何设计一个高性能短链系统](https://stevenhoukai.github.io/2021/09/27/20210927-shorturl/)*
 
 - ### **工作踩坑记录**
 
