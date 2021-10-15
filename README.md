@@ -48,6 +48,8 @@
 
   - ###### *[如何设计一个高性能短链系统](https://stevenhoukai.github.io/2021/09/27/20210927-shorturl/)*
 
+  - *[**如何设计一个cdk系统**](https://stevenhoukai.github.io/2021/10/08/20211008-cdk/)*
+
 - ### **工作踩坑记录**
 
   - ###### *[场景1:for循环遍历](https://stevenhoukai.github.io/2021/08/16/20210816-gapGolangFor/)*
@@ -100,6 +102,8 @@
 ## **爱好篇**
 
 - ### **吉他弹唱**
+
+  - ###### *[和弦的构成（分析）](https://stevenhoukai.github.io/2021/10/10/20211010-guitar/)* 
 
 - ### **键盘弹唱**
 
