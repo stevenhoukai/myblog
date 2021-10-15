@@ -48,7 +48,7 @@
 
   - ###### *[如何设计一个高性能短链系统](https://stevenhoukai.github.io/2021/09/27/20210927-shorturl/)*
 
-  - *[**如何设计一个cdk系统**](https://stevenhoukai.github.io/2021/10/08/20211008-cdk/)*
+  - ###### *[如何设计一个cdk系统](https://stevenhoukai.github.io/2021/10/08/20211008-cdk/)*
 
 - ### **工作踩坑记录**
 
