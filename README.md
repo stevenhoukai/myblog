@@ -91,6 +91,27 @@
 
   - #### **Tips**
 
+## **MQ**
+
+- ### **Pulsar**
+
+  - #### **硬核**
+
+    - ######  *[Pulsar Topic 和分区](https://stevenhoukai.github.io/2022/02/14/20220214-pulsar-arch/)*
+
+    - ###### *[消息存储原理与 ID 规则](https://stevenhoukai.github.io/2022/02/15/20220215-pulsar-storage/)*
+
+    - ###### *[消息副本与存储机制](https://stevenhoukai.github.io/2022/02/16/20220216-pulsar-replicate/)*
+
+  - #### **Tips**
+
+
+- ### **kafka**
+
+  - #### **硬核**
+
+  - #### **Tips**
+
 ## **Linux与网络**
 
 ## **面试篇**
