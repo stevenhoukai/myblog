@@ -24,15 +24,9 @@
 
 ## **Golang**
 
-- ### **Golang基础**
+- ### **Golang核心**
 
-  -  ###### *[Go语言基础之变量和常量]()*
-
-- ### **Golang学习ing相关作业**
-
-  - ###### *[作业1](https://stevenhoukai.github.io/2020/11/26/20201127-golangprectice1/)*
-
-  - ###### *[作业2](https://stevenhoukai.github.io/2020/11/28/20201128-golangprectice2/)*
+  -  ###### *[Golang的string](https://stevenhoukai.github.io/2022/03/24/20220324-gostring/)*
 
 - ### **GoLang并发编程**
 
