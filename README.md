@@ -99,6 +99,8 @@
 
     - ###### *[消息副本与存储机制](https://stevenhoukai.github.io/2022/02/16/20220216-pulsar-replicate/)*
 
+    - ###### *[Pulsar的订阅模式](https://stevenhoukai.github.io/2022/02/19/20220219-pulsar-sub/)*
+
   - #### **Tips**
 
 
@@ -120,9 +122,13 @@
 
 - ### **吉他弹唱**
 
-  - ###### *[和弦的构成（分析）](https://stevenhoukai.github.io/2021/10/10/20211010-guitar/)* 
+  - ###### *[和弦的构成（分析）](https://stevenhoukai.github.io/2021/10/10/20211010-guitar/)*
+
+  - ###### *[平凡之路](https://www.bilibili.com/video/BV1wa41167nF?spm_id_from=333.999.0.0)*
 
 - ### **键盘弹唱**
+
+  - ###### *[蒲公英的约定](https://www.bilibili.com/video/BV1Qb4y1p7aF?spm_id_from=333.999.0.0)*
 
 - ### 吉他谱
 
