@@ -26,7 +26,9 @@
 
 - ### **Golang核心**
 
-  -  ###### *[Golang的string](https://stevenhoukai.github.io/2022/03/24/20220324-gostring/)*
+  - ###### *[Golang的string](https://stevenhoukai.github.io/2022/03/24/20220324-gostring/)*
+
+  -  ###### *[slice](https://stevenhoukai.github.io/2022/03/26/20220326-goslice/)*
 
 - ### **GoLang并发编程**
 
