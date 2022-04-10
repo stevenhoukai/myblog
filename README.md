@@ -6,29 +6,17 @@
 
 ![](https://github.com/stevenhoukai/myblog/blob/main/images/timg.jpg)
 
-## **YonYou UAP**
-
-- ###### *[UAP通讯模型解析](https://stevenhoukai.github.io/2019/07/19/20190719-2/)*
-
-- ###### *[UAP事务如何处理？](https://stevenhoukai.github.io/2019/07/24/20190724/)*
-
-- ###### *[简单模拟UAP客户端服务端通讯---RMI](https://stevenhoukai.github.io/2019/08/05/20190805/)*
-
-## **JAVA**
-
-- ### **Spring**
-
-  - ###### *[手动简单实现基于xml的IOC](https://stevenhoukai.github.io/2020/01/28/20200127springioc/)*
-
-  - ###### *[手动简单实现基于annotation的IOC](https://stevenhoukai.github.io/2020/01/29/springioc-anno/)*
-
 ## **Golang**
 
 - ### **Golang核心**
 
   - ###### *[Golang的string](https://stevenhoukai.github.io/2022/03/24/20220324-gostring/)*
 
-  -  ###### *[slice](https://stevenhoukai.github.io/2022/03/26/20220326-goslice/)*
+  - ###### *[slice](https://stevenhoukai.github.io/2022/03/26/20220326-goslice/)*
+
+  - ###### *[内存对齐]()*
+
+  -  ###### *[map]()*
 
 - ### **GoLang并发编程**
 
@@ -47,6 +35,8 @@
   - ###### *[如何设计一个cdk系统](https://stevenhoukai.github.io/2021/10/08/20211008-cdk/)*
 
   - ###### *[为什么我们要用protobuf](https://stevenhoukai.github.io/2022/03/17/20220313-protobuf/)*
+
+  - ###### *[为什么重构我们选择sha256]()*
 
 - ### **工作踩坑记录**
 
@@ -93,7 +83,7 @@
 
 - ### **Pulsar**
 
-  - #### **硬核**
+  - #### **核心原理解析**
 
     - ######  *[Pulsar Topic 和分区](https://stevenhoukai.github.io/2022/02/14/20220214-pulsar-arch/)*
 
@@ -101,7 +91,17 @@
 
     - ###### *[消息副本与存储机制](https://stevenhoukai.github.io/2022/02/16/20220216-pulsar-replicate/)*
 
+  - #### **使用总结(golang版)**
+
     - ###### *[Pulsar的订阅模式](https://stevenhoukai.github.io/2022/02/19/20220219-pulsar-sub/)*
+
+    - ###### *[如何使用定时和延迟消息]()*
+
+    - ###### *[让消息高级一点--标签过滤](*
+
+    - ###### *[核心实践--RETRY&DLQ]()*
+
+    - ###### *[Producer&Consumer最佳实践方式]()*
 
   - #### **Tips**
 
@@ -110,9 +110,27 @@
 
   - #### **硬核**
 
+    - ###### *[kafka是个啥](https://stevenhoukai.github.io/2022/03/31/20220331-kafkaall/)*
+
   - #### **Tips**
 
 ## **Linux与网络**
+
+## **YonYou UAP**
+
+- ###### *[UAP通讯模型解析](https://stevenhoukai.github.io/2019/07/19/20190719-2/)*
+
+- ###### *[UAP事务如何处理？](https://stevenhoukai.github.io/2019/07/24/20190724/)*
+
+- ###### *[简单模拟UAP客户端服务端通讯---RMI](https://stevenhoukai.github.io/2019/08/05/20190805/)*
+
+## **JAVA**
+
+- ### **Spring**
+
+  - ###### *[手动简单实现基于xml的IOC](https://stevenhoukai.github.io/2020/01/28/20200127springioc/)*
+
+  - ###### *[手动简单实现基于annotation的IOC](https://stevenhoukai.github.io/2020/01/29/springioc-anno/)*
 
 ## **面试篇**
 
