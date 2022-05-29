@@ -85,7 +85,11 @@
 
   - #### **核心原理解析**
 
-    - ######  *[Pulsar Topic 和分区](https://stevenhoukai.github.io/2022/02/14/20220214-pulsar-arch/)*
+    - ######  *[一文看懂Apache-Pulsar（上）- 原理篇](https://stevenhoukai.github.io/2022/04/15/20220415-pulsarall/)*
+
+    - ###### *[一文看懂Apache-Pulsar（下）- 实践篇](https://stevenhoukai.github.io/2022/04/15/20220415-pulsarall/)*
+
+    - ###### *[Pulsar Topic 和分区](https://stevenhoukai.github.io/2022/02/14/20220214-pulsar-arch/)*
 
     - ###### *[消息存储原理与 ID 规则](https://stevenhoukai.github.io/2022/02/15/20220215-pulsar-storage/)*
 
@@ -97,16 +101,16 @@
 
     - ###### *[如何使用定时和延迟消息]()*
 
-    - ###### *[让消息高级一点--标签过滤](*
+    - ###### *[让消息高级一点--标签过滤]()*
 
     - ###### *[核心实践--RETRY&DLQ]()*
-
+  
     - ###### *[Producer&Consumer最佳实践方式]()*
-
+  
   - #### **Tips**
 
 
-- ### **kafka**
+- ### **Kafka**
 
   - #### **硬核**
 
