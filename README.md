@@ -38,6 +38,8 @@
 
   - ###### *[为什么重构我们选择sha256]()*
 
+  - ###### *[如何保护好自己的服务](https://stevenhoukai.github.io/2022/09/05/20220905-ratelimit/)*
+
 - ### **工作踩坑记录**
 
   - ###### *[场景1:for循环遍历](https://stevenhoukai.github.io/2021/08/16/20210816-gapGolangFor/)*
@@ -137,8 +139,6 @@
   - ###### *[手动简单实现基于annotation的IOC](https://stevenhoukai.github.io/2020/01/29/springioc-anno/)*
 
 ## **番外篇**
-
-- ###### *[猴哥的一次后台开发面试之旅](https://stevenhoukai.github.io/2020/11/21/20201121-ms1/)* 
 
 - ###### *[hexo迁移（Windows -> Mac)](https://stevenhoukai.github.io/2020/12/18/20201218-HexoTransferWindowsToMac/)* 
 
