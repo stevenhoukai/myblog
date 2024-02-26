@@ -35,9 +35,14 @@ Master节点是K8s集群大脑，它由如下组件构成：
 
 Worker节点是K8s集群资源的提供者，它由如下组件构成：
 
-Kubelet: 它是Worker节点资源的管理者，相当于一个Agent角色。它监听API server的事件，根据Master节点的指示启动或者关闭Pod等资源，也将本节点状态数据汇报给Master节点。如果说Master节点是K8s集群的大脑，那么Kubelet就是Worker节点的小脑。
-Container Runtime: 它是节点容器资源的管理者，如果采用Docker容器，那么它就是Docker Engine。Kubelet并不直接管理节点的容器资源，它委托Container Runtime进行管理，比如启动或者关闭容器，收集容器状态等。Container Runtime在启动容器时，如果本地没有镜像缓存，则需要到Docker Registry(或Docker Hub)去拉取相应镜像，然后缓存本地。
-Kube-Proxy: 它是管理K8s中的服务(Service)网络的组件。Pod在K8s中是ephemeral的概念，也就是不固定的，PodIP可能会变(包括预期和非预期的)。为了屏蔽PodIP的可能的变化，K8s中引入了Servie概念，它可以屏蔽应用的PodIP，并且在调用时进行负载均衡。Kube-Proxy是实现K8s服务(Service)网络的背后机制。另外，当需要把K8s中的服务(Service)暴露给外网时，也需要通过Kube-Proxy进行代理转发。
+#### Kubelet
+它是Worker节点资源的管理者，相当于一个Agent角色。它监听API server的事件，根据Master节点的指示启动或者关闭Pod等资源，也将本节点状态数据汇报给Master节点。如果说Master节点是K8s集群的大脑，那么Kubelet就是Worker节点的小脑。
+
+#### Container Runtime
+它是节点容器资源的管理者，如果采用Docker容器，那么它就是Docker Engine。Kubelet并不直接管理节点的容器资源，它委托Container Runtime进行管理，比如启动或者关闭容器，收集容器状态等。Container Runtime在启动容器时，如果本地没有镜像缓存，则需要到Docker Registry(或Docker Hub)去拉取相应镜像，然后缓存本地。
+
+#### Kube-Proxy
+它是管理K8s中的服务(Service)网络的组件。Pod在K8s中是ephemeral的概念，也就是不固定的，PodIP可能会变(包括预期和非预期的)。为了屏蔽PodIP的可能的变化，K8s中引入了Servie概念，它可以屏蔽应用的PodIP，并且在调用时进行负载均衡。Kube-Proxy是实现K8s服务(Service)网络的背后机制。另外，当需要把K8s中的服务(Service)暴露给外网时，也需要通过Kube-Proxy进行代理转发。
 流程样例
 ![](https://github.com/stevenhoukai/myblog/blob/main/images/k8sjiagou-liucheng.jpg)
 
