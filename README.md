@@ -16,7 +16,7 @@
     - ######  *[k8s整体架构](https://github.com/stevenhoukai/myblog/blob/main/docs/k8s-jiagou.md)*
 
   - #### **网络三部曲**
-    - ######  *[Pod网络](https://github.com/stevenhoukai/myblog/blob/main/docs/k8s-jiagou.md)*
+    - ######  *[Pod网络](https://github.com/stevenhoukai/myblog/blob/main/docs/k8s-net-pod.md)*
     - ######  *[Service网络](https://github.com/stevenhoukai/myblog/blob/main/docs/k8s-jiagou.md)*
     - ######  *[NodePort vs LoadBalancer vs Ingress](https://github.com/stevenhoukai/myblog/blob/main/docs/k8s-jiagou.md)*
 
