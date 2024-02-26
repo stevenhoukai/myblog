@@ -60,9 +60,6 @@
 
   - ###### *[slice](https://stevenhoukai.github.io/2022/03/26/20220326-goslice/)*
 
-  - ###### *[内存对齐]()*
-
-  -  ###### *[map]()*
 
 - ### **GoLang并发编程**
 
@@ -81,8 +78,6 @@
   - ###### *[如何设计一个cdk系统](https://stevenhoukai.github.io/2021/10/08/20211008-cdk/)*
 
   - ###### *[为什么我们要用protobuf](https://stevenhoukai.github.io/2022/03/17/20220313-protobuf/)*
-
-  - ###### *[为什么重构我们选择sha256]()*
 
   - ###### *[如何保护好自己的服务](https://stevenhoukai.github.io/2022/09/05/20220905-ratelimit/)*
 
