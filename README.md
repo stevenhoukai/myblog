@@ -21,7 +21,7 @@
 
     - ######  *[一文看懂Apache-Pulsar（上）- 原理篇](https://stevenhoukai.github.io/2022/04/15/20220415-pulsarall/)*
 
-    - ###### *[一文看懂Apache-Pulsar（下）- 实践篇](https://stevenhoukai.github.io/2022/04/15/20220415-pulsardown/)*
+    - ###### *[一文看懂Apache-Pulsar（下）- 实践篇 - 待更新](https://stevenhoukai.github.io/2022/04/15/20220415-pulsardown/)*
 
     - ###### *[Pulsar Topic 和分区](https://stevenhoukai.github.io/2022/02/14/20220214-pulsar-arch/)*
 
@@ -33,13 +33,13 @@
 
     - ###### *[Pulsar的订阅模式](https://stevenhoukai.github.io/2022/02/19/20220219-pulsar-sub/)*
 
-    - ###### *[如何使用定时和延迟消息]()*
+    - ###### *[如何使用定时和延迟消息-待更新]()*
 
-    - ###### *[让消息高级一点--标签过滤]()*
+    - ###### *[让消息高级一点--标签过滤-待更新]()*
 
-    - ###### *[核心实践--RETRY&DLQ]()*
+    - ###### *[核心实践--RETRY&DLQ-待更新]()*
   
-    - ###### *[Producer&Consumer最佳实践方式]()*
+    - ###### *[Producer&Consumer最佳实践方式-待更新]()*
   
   - #### **Tips**
 
@@ -48,7 +48,7 @@
 
   - #### **硬核**
 
-    - ###### *[kafka是个啥](https://stevenhoukai.github.io/2022/03/31/20220331-kafkaall/)*
+    - ###### *[kafka核心原理](https://stevenhoukai.github.io/2022/03/31/20220331-kafkaall/)*
 
   - #### **Tips**
 
