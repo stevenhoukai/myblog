@@ -2,7 +2,7 @@
 
 腾讯内推邮箱: 348008515@qq.com  or  stephenkhou@tencent.com 简历请说明一下自己的求职意向哈
 
-路漫漫其修远兮，我们要及时给自己打打鸡血，才能勉强的学习下去～
+路漫漫其修远兮，吾将上下而求索～
 
 ![](https://github.com/stevenhoukai/myblog/blob/main/images/timg.jpg)
 
@@ -12,6 +12,45 @@
 - ### **k8s学习笔记**
 
   - ###### *[k8s整体架构](https://github.com/stevenhoukai/myblog/blob/main/docs/k8s-jiagou.md)*
+
+## **MQ**
+
+- ### **Pulsar**
+
+  - #### **核心原理解析**
+
+    - ######  *[一文看懂Apache-Pulsar（上）- 原理篇](https://stevenhoukai.github.io/2022/04/15/20220415-pulsarall/)*
+
+    - ###### *[一文看懂Apache-Pulsar（下）- 实践篇](https://stevenhoukai.github.io/2022/04/15/20220415-pulsardown/)*
+
+    - ###### *[Pulsar Topic 和分区](https://stevenhoukai.github.io/2022/02/14/20220214-pulsar-arch/)*
+
+    - ###### *[消息存储原理与 ID 规则](https://stevenhoukai.github.io/2022/02/15/20220215-pulsar-storage/)*
+
+    - ###### *[消息副本与存储机制](https://stevenhoukai.github.io/2022/02/16/20220216-pulsar-replicate/)*
+
+  - #### **使用总结(golang版)**
+
+    - ###### *[Pulsar的订阅模式](https://stevenhoukai.github.io/2022/02/19/20220219-pulsar-sub/)*
+
+    - ###### *[如何使用定时和延迟消息]()*
+
+    - ###### *[让消息高级一点--标签过滤]()*
+
+    - ###### *[核心实践--RETRY&DLQ]()*
+  
+    - ###### *[Producer&Consumer最佳实践方式]()*
+  
+  - #### **Tips**
+
+
+- ### **Kafka**
+
+  - #### **硬核**
+
+    - ###### *[kafka是个啥](https://stevenhoukai.github.io/2022/03/31/20220331-kafkaall/)*
+
+  - #### **Tips**
 
 ## **Golang**
 
@@ -88,44 +127,6 @@
 
   - #### **Tips**
 
-## **MQ**
-
-- ### **Pulsar**
-
-  - #### **核心原理解析**
-
-    - ######  *[一文看懂Apache-Pulsar（上）- 原理篇](https://stevenhoukai.github.io/2022/04/15/20220415-pulsarall/)*
-
-    - ###### *[一文看懂Apache-Pulsar（下）- 实践篇](https://stevenhoukai.github.io/2022/04/15/20220415-pulsardown/)*
-
-    - ###### *[Pulsar Topic 和分区](https://stevenhoukai.github.io/2022/02/14/20220214-pulsar-arch/)*
-
-    - ###### *[消息存储原理与 ID 规则](https://stevenhoukai.github.io/2022/02/15/20220215-pulsar-storage/)*
-
-    - ###### *[消息副本与存储机制](https://stevenhoukai.github.io/2022/02/16/20220216-pulsar-replicate/)*
-
-  - #### **使用总结(golang版)**
-
-    - ###### *[Pulsar的订阅模式](https://stevenhoukai.github.io/2022/02/19/20220219-pulsar-sub/)*
-
-    - ###### *[如何使用定时和延迟消息]()*
-
-    - ###### *[让消息高级一点--标签过滤]()*
-
-    - ###### *[核心实践--RETRY&DLQ]()*
-  
-    - ###### *[Producer&Consumer最佳实践方式]()*
-  
-  - #### **Tips**
-
-
-- ### **Kafka**
-
-  - #### **硬核**
-
-    - ###### *[kafka是个啥](https://stevenhoukai.github.io/2022/03/31/20220331-kafkaall/)*
-
-  - #### **Tips**
 
 ## **Linux与网络**
 

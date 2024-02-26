@@ -16,6 +16,7 @@ K8s主要解决集群资源调度的问题。简单讲，就是当有应用发�
 
 ### Master节点组件
 
+![](https://github.com/stevenhoukai/myblog/blob/main/images/k8sjiagou-master.jpg)
 
 Master节点是K8s集群大脑，它由如下组件构成：
 
@@ -30,6 +31,7 @@ Master节点是K8s集群大脑，它由如下组件构成：
 
 ### Worker节点组件
 
+![](https://github.com/stevenhoukai/myblog/blob/main/images/k8sjiagou-worker.jpg)
 
 Worker节点是K8s集群资源的提供者，它由如下组件构成：
 
@@ -37,7 +39,7 @@ Kubelet: 它是Worker节点资源的管理者，相当于一个Agent角色。它
 Container Runtime: 它是节点容器资源的管理者，如果采用Docker容器，那么它就是Docker Engine。Kubelet并不直接管理节点的容器资源，它委托Container Runtime进行管理，比如启动或者关闭容器，收集容器状态等。Container Runtime在启动容器时，如果本地没有镜像缓存，则需要到Docker Registry(或Docker Hub)去拉取相应镜像，然后缓存本地。
 Kube-Proxy: 它是管理K8s中的服务(Service)网络的组件。Pod在K8s中是ephemeral的概念，也就是不固定的，PodIP可能会变(包括预期和非预期的)。为了屏蔽PodIP的可能的变化，K8s中引入了Servie概念，它可以屏蔽应用的PodIP，并且在调用时进行负载均衡。Kube-Proxy是实现K8s服务(Service)网络的背后机制。另外，当需要把K8s中的服务(Service)暴露给外网时，也需要通过Kube-Proxy进行代理转发。
 流程样例
-
+![](https://github.com/stevenhoukai/myblog/blob/main/images/k8sjiagou-liucheng.jpg)
 
 如果我们把Master节点和Worker节点集成起来，就构成上图所示的K8s集群。下面我们通过一个发布流程，展示上面介绍的这些组件是如何配合工作的。
 
@@ -47,11 +49,22 @@ Scheduler通过API server监听到有新的应用发布请求，它通过调度�
 所有Worker节点上Kube-Proxy通过API server监听到有新的发布，它获取应用的PodIP/ClusterIP/端口等相关数据，更新本地的iptables表规则，让本地的Pods可以通过iptables转发方式，访问到新发布应用的Pods。
 Controller Manager通过API server，时刻监控新发应用的健康状况，保证实际状态和预期状态最终一致。
 总体架构
-
+![](https://github.com/stevenhoukai/myblog/blob/main/images/k8sjiagou-zongti.jpg)
 
 上图是一个K8s集群的总体架构。实际K8s集群中还有一个覆盖(Overlay)网络，集群中的Pods通过覆盖网络可以实现IP寻址和通讯。实现覆盖网络的技术有很多，例如Flannel/VxLan/Calico/Weave-Net等等。外网流量如果要访问K8s集群内部的服务，一般要走负载均衡器(Load Balancer)，背后流量会通过Kube-Proxy间接转发到服务Pods上。
 
 除了上述组件，K8s外围一般还有存储，监控，日志和分析等配套支持服务。
 
 ## 总结
-下表我把本文讲到的一些K8s关键组件的作用做一个梳理总结，方便大家理解记忆。
+下表是核心组件以及其对应作用
+| 组件      | 结点 | 核心作用     |
+| :---        |    :----:   |          :---: |
+| Etcd      | Master or 独立节点       | 集群状态集中存储   |
+| API Server   | Master        | 集群接口和通讯总线 |
+| Scheduler   | Master        | 调度决策组件 |
+| Controller Manager   | Master        | 协调发布状态最终一致组件 |
+| Kubelet   | Worker        | worker节点资源管理 |
+| Container Runtime   | Worker        | 容器资源管理 |
+| Kube-proxy   | Worker        | 实现服务（Service）抽象组件，屏蔽PodIP的变化和负载均衡 |
+| Pod   | Worker        | k8s云平台中的虚拟机抽象，k8s的基本调度单位 |
+| Container   | Worker        | 应用跑在容器中，资源隔离单位 |
