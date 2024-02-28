@@ -18,7 +18,7 @@
   - #### **网络三部曲**
     - ######  *[Pod网络](https://github.com/stevenhoukai/myblog/blob/main/docs/k8s-net-pod.md)*
     - ######  *[Service网络](https://github.com/stevenhoukai/myblog/blob/main/docs/k8s-net-service.md)*
-    - ######  *[NodePort vs LoadBalancer vs Ingress](https://github.com/stevenhoukai/myblog/blob/main/docs/k8s-jiagou.md)*
+    - ######  *[NodePort vs LoadBalancer vs Ingress](https://github.com/stevenhoukai/myblog/blob/main/docs/k8s-net-nodeport.md)*
 
 ## **MQ**
 
