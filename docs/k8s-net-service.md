@@ -1,17 +1,17 @@
 # k8s网络 - Service网络
 
 ## 前言
-在上一篇中，我们了解了K8s的4层网络中的第1层Pod网络。有了Pod网络，K8s集群内的所有Pods在逻辑上都可以看作在一个平面网络内，可以正常IP寻址和互通。但是Pod仅仅是K8s云平台中的虚拟机抽象，最终，我们需要在K8s集群中运行的是应用或者说服务(Service)，而一个Service背后一般由多个Pods组成集群，这时候就引入了服务发现(Service Discovery)和负载均衡(Load Balancing)等问题，这就是第2层Service网络要解决的问题，也是本文我要展开分析的问题。
+在上一篇中，学习了解了K8s的4层网络中的第1层Pod网络。有了Pod网络，K8s集群内的所有Pods在逻辑上都可以看作在一个平面网络内，可以正常IP寻址和互通。但是Pod仅仅是K8s云平台中的虚拟机抽象，最终，需要在K8s集群中运行的是应用或者说服务(Service)，而一个Service背后一般由多个Pods组成集群，这时候就引入了服务发现(Service Discovery)和负载均衡(Load Balancing)等问题，这就是第2层Service网络要解决的问题，也是本文要展开分析的问题。
 
 ![](https://github.com/stevenhoukai/myblog/blob/main/images/net-pod-1.jpg)
 
 
 ## Service网络概念模型
-我们假定第1层Pod网络已经存在，下图是K8s的第2层Service网络的简化概念模型:
+假定第1层Pod网络已经存在，下图是K8s的第2层Service网络的简化概念模型:
 ![](https://github.com/stevenhoukai/myblog/blob/main/images/service-1.jpg)
 
 
-我们假定在K8s集群中部署了一个Account-App应用，这个应用由4个Pod(虚拟机)组成集群一起提供服务，每一个Pod都有自己的PodIP和端口。我们再假定集群内还部署了其它应用，这些应用中有些是Account-App的消费方，也就说有Client Pod要访问Account-App的Pod集群。这个时候自然引入了两个问题：
+假定在K8s集群中部署了一个Account-App应用，这个应用由几个Pod(虚拟机)组成集群一起提供服务，每一个Pod都有自己的PodIP和端口。再假定集群内还部署了其它应用，这些应用中有些是Account-App的消费方，也就说有Client Pod要访问Account-App的Pod集群。这个时候自然引入了两个问题：
 
 ### 服务发现(Service Discovery)
 Client Pod如何发现定位Account-App集群中Pod的IP？况且Account-App集群中Pod的IP是有可能会变的(英文叫ephemeral)，这种变化包括预期的，比如Account-App重新发布，或者非预期的，例如Account-App集群中有Pod挂了，K8s对Account-App进行重新调度部署。
@@ -24,7 +24,7 @@ Client Pod如何以某种负载均衡策略去访问Account-App集群中的不�
 Account-Service提供统一的ClusterIP来解决服务发现问题，Client只需通过ClusterIP就可以访问Account-App的Pod集群，不需要关心集群中的具体Pod数量和PodIP，即使是PodIP发生变化也会被ClusterIP所屏蔽。注意，这里的ClusterIP实际是个虚拟IP，也称Virtual IP(VIP)。
 ### 负载均衡
 Account-Service抽象层具有负载均衡的能力，支持以不同策略去访问Account-App集群中的不同Pod实例，以实现负载分摊和HA高可用。K8s中默认的负载均衡策略是RoundRobin，也可以定制其它复杂策略。
-K8s中为何要引入Service抽象？背后的原理是什么？后面我将以技术演进视角来解释这些问题。
+K8s中为何要引入Service抽象？背后的原理是什么？后面将以技术演进视角来解释这些问题。
 
 ## 服务发现技术演进
 DNS域名服务是一种较老且成熟的标准技术，实际上DNS可以认为是最早的一种服务发现技术。
@@ -36,7 +36,7 @@ DNS域名服务是一种较老且成熟的标准技术，实际上DNS可以认�
 
 不同DNS客户端实现功能有差异，有些客户端每次调用都会去查询DNS服务，造成不必要的开销，而有些客户端则会缓存DNS信息，默认超时时间较长，当目标PodIP发生变化时(在容器云环境中是常态)，存在缓存刷新不及时，会导致访问Pod失效。
 DNS客户端实现的负载均衡策略一般都比较简单，大都是RoundRobin，有些则不支持负载均衡调用。
-考虑到上述不同DNS客户端实现的差异，不在K8s控制范围内，所以K8s没有直接采用DNS技术做服务发现。注意，实际K8s是引入Kube-DNS支持通过域名访问服务的，不过这是建立在CusterIP/Service网络之上，这个我后面会展开。
+考虑到上述不同DNS客户端实现的差异，不在K8s控制范围内，所以K8s没有直接采用DNS技术做服务发现。注意，实际K8s是引入Kube-DNS支持通过域名访问服务的，不过这是建立在CusterIP/Service网络之上，这个后面会展开。
 
 另外一种较新的服务发现技术，是引入Service Registry+Client配合实现，在当下微服务时代，这是一个比较流行的做法。目前主流的产品，如Netflix开源的Eureka + Ribbon，HashiCorp开源的Consul，还有阿里新开源Nacos等，都是这个方案的典型代表。
 ![](https://github.com/stevenhoukai/myblog/blob/main/images/service-3.jpg)
@@ -45,7 +45,7 @@ DNS客户端实现的负载均衡策略一般都比较简单，大都是RoundRob
 
 在K8s中引入Service Registry实现服务发现也不复杂，K8s自身带分布式存储etcd就可以实现Service Registry。假设K8s引入Service Registry做服务发现(如上图所示)，运行时K8s可以把Account-App和Pod集群信息(IP + Port等)自动注册到Service Registry，Client应用则通过Service Registry查询发现目标Pod，然后发起调用。这个方案也不复杂，而且客户端可以实现灵活的负载均衡策略，但是需要引入客户端配合，对客户应用有侵入性，所以K8s也没有直接采用这种方案。
 
-K8s虽然没有直接采用上述方案，但是它的Service网络实现是在上面两种技术的基础上扩展演进出来的。它融合了上述方案的优点，同时解决了上述方案的不足，下节我会详细剖析K8s的Service网络的实现原理。
+K8s虽然没有直接采用上述方案，但是它的Service网络实现是在上面两种技术的基础上扩展演进出来的。它融合了上述方案的优点，同时解决了上述方案的不足，下节会详细剖析K8s的Service网络的实现原理。
 
 ## K8s的Service网络原理
 前面提到，K8s的服务发现机制是在上节讲的Service Registry + DNS基础上发展演进出来的，下图展示K8s服务发现的简化原理：
@@ -53,7 +53,7 @@ K8s虽然没有直接采用上述方案，但是它的Service网络实现是在�
 ![](https://github.com/stevenhoukai/myblog/blob/main/images/service-4.jpg)
 
 
-在K8s平台的每个Worker节点上，都部署有两个组件，一个叫Kubelet，另外一个叫Kube-Proxy，这两个组件+Master是K8s实现服务注册和发现的关键。下面我们看下简化的服务注册发现流程。
+在K8s平台的每个Worker节点上，都部署有两个组件，一个叫Kubelet，另外一个叫Kube-Proxy，这两个组件+Master是K8s实现服务注册和发现的关键。下面来看下简化的服务注册发现流程。
 
 首先，在服务Pod实例发布时(可以对应K8s发布中的Kind: Deployment)，Kubelet会负责启动Pod实例，启动完成后，Kubelet会把服务的PodIP列表汇报注册到Master节点。
 其次，通过服务Service的发布(对应K8s发布中的Kind: Service)，K8s会为服务分配ClusterIP，相关信息也记录在Master上。
@@ -73,4 +73,4 @@ K8s的Service网络构建于Pod网络之上，它主要目的是解决服务发�
 K8s通过一个ServiceName+ClusterIP统一屏蔽服务发现和负载均衡，底层技术是在DNS+Service Registry基础上发展演进出来。
 K8s的服务发现和负载均衡是在客户端通过Kube-Proxy + iptables转发实现，它对应用无侵入，且不穿透Proxy，没有额外性能损耗。
 K8s服务发现机制，可以认为是现代微服务发现机制和传统Linux内核机制的优雅结合。
-有了Service抽象，K8s中部署的应用都可以通过一个抽象的ClusterIP进行寻址访问，并且消费方不需要关心这个ClusterIP后面究竟有多少个Pod实例，它们的PodIP是什么，会不会变化，如何以负载均衡方式去访问等问题。但是，K8s的Service网络只是一个集群内可见的内部网络，集群外部是看不到Service网络的，也无法直接访问。而我们发布应用，有些是需要暴露出去，要让外网甚至公网能够访问的，这样才能对外提供服务
+有了Service抽象，K8s中部署的应用都可以通过一个抽象的ClusterIP进行寻址访问，并且消费方不需要关心这个ClusterIP后面究竟有多少个Pod实例，它们的PodIP是什么，会不会变化，如何以负载均衡方式去访问等问题。但是，K8s的Service网络只是一个集群内可见的内部网络，集群外部是看不到Service网络的，也无法直接访问。而发布应用，有些是需要暴露出去，要让外网甚至公网能够访问的，这样才能对外提供服务。
